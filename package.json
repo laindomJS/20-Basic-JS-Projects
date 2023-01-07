@@ -1,0 +1,20 @@
+{
+  "name": "20-basic-js-projects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/laindomJS/20-Basic-JS-Projects.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/laindomJS/20-Basic-JS-Projects/issues"
+  },
+  "homepage": "https://github.com/laindomJS/20-Basic-JS-Projects#readme"
+}
