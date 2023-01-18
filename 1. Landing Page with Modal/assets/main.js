@@ -1,8 +1,8 @@
 const $ = (selector) => document.querySelector(selector); // HELPER
 
-const btn = $('#button');
+const btnOpen = $('#button');
 const modal = $('#modal');
-const close = $('#close');
+const btnClose = $('#close');
 
 let condition = true;
 
@@ -20,10 +20,10 @@ function closeModal() {
   }
 }
  
-btn.addEventListener('click', () => {
+btnOpen.addEventListener('click', () => {
   showModal();
 }); 
 
-close.addEventListener('click', () => {
+btnClose.addEventListener('click', () => {
   closeModal();
 })

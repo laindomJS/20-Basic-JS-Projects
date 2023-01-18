@@ -6,13 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lading Page + Modal</title>
   <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   
   <div class="container">
 
     <article class="modal" id="modal">
-      <span id="close">close</span>
+      <i class="fa-solid fa-xmark fa-xl" id="close"></i>
+
+      <div class="modal__text">
+
+        <h2 class="modal__title">Login</h2>
+
+        <div class="form__container">
+
+          <div class="input__container name__container">
+            <label for="name">Name</label>
+            <input type="text" name="text" id="name">
+          </div>
+          <div class="input__container passwd">
+            <label for="paswword">Password</label>
+            <input type="password" name="password" id="pswd">
+          </div>
+
+          <button class="login">Log In</button>
+
+        </div>
+
+      </div>
     </article>
     
     <nav class="menu__container">
@@ -47,5 +69,6 @@
 
 
   <script defer src="/assets/main.js"></script>
+
 </body>
 </html>
