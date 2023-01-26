@@ -29,6 +29,5 @@ userSelection.addEventListener('change', (evt) => {
 
 button.addEventListener('click', () => {
   result = weight * planets[planet]; 
-  message.innerHTML = `Your weight in ${planets[planet]} is ${result.toLocaleString()}`;
-  console.log(result.toLocaleString());
+  message.innerHTML = `Your weight in ${planet} is ${result.toLocaleString()}kg`;
 })
