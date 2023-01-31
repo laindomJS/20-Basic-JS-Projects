@@ -1,12 +1,13 @@
-
 # 20 Basic JavaScript Projects
+
 This repository is a container of projects made it with the basic web technologies, with focus in JavaScript.
 
-You can fork and clone this repo, for study, change, modify the projects and add news.
+You can fork and clone this repo, for study, change, modify the projects and add news projects.
+
+
 ## Tech Stack
 
 - **Client:** HTML, CSS, JavaScript
-
 
 
 ## Authors
@@ -17,6 +18,7 @@ You can fork and clone this repo, for study, change, modify the projects and add
 ## Contributing
 
 Contributions are always welcome!
+
 
 #### Step-by-Step for Contributing
 
