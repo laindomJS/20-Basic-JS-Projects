@@ -22,10 +22,14 @@ article.modal {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #000;
+  background-color: #c44430;
   color: #fff;
   transition: transform .5s ease-in-out;
   transform: translateY(-10000px);
+}
+
+article.modal h1 {
+  font-size: 3rem;
 }
 
 main.container {
@@ -37,7 +41,7 @@ main.container {
 }
 
 div.countdown__items {
-  margin-top: 1.5rem;
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
 }
@@ -45,7 +49,10 @@ div.countdown__items {
 div.item {
   margin: 0 1.4rem;
   padding: 0 1rem;
-  width: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 h1 {
@@ -53,10 +60,10 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
-  text-align: center;
+  font-size: 2rem;
 }
 
 span {
-  padding: 0 2rem;
+  font-size: 2rem;
+  font-weight: 600;
 }
