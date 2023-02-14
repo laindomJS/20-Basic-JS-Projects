@@ -38,3 +38,14 @@ export const setStates = (calculator, action, numbersDisplay, display) => {
     }
   }
 }
+
+export const calculate = (n1, operator, n2) => {
+  let result = '';
+
+  if (operator === 'add') result = parseFloat(n1) + parseFloat(n2);
+  if (operator === 'subtract') result = parseFloat(n1) - parseFloat(n2);
+  if (operator === 'multiply') result = parseFloat(n1) * parseFloat(n2);
+  if (operator === 'divide') result = parseFloat(n1) / parseFloat(n2);
+
+  return result;
+}
