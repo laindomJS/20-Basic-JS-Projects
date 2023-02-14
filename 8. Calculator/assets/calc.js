@@ -22,10 +22,7 @@ export const addDecimal = (action, display, numbersDisplay) => {
   }
 }
 
-export const addFirstValue = (calculator, action, numbersDisplay, display) => {
-  
-  let firstValue;
-  let operator;
+export const setStates = (calculator, action, numbersDisplay, display) => {
   
   if (
 		action === 'add' ||
@@ -33,14 +30,11 @@ export const addFirstValue = (calculator, action, numbersDisplay, display) => {
 		action === 'multiply' ||
 		action === 'divide'
 	) {
-    if(calculator.dataset.state !== 'operator') {
+    if (calculator.dataset.state !== 'operator') {
       calculator.dataset.state = 'operator';
       calculator.dataset.operator = action;
-      firstValue = numbersDisplay;
-      operator = calculator.dataset.operator;
+      calculator.dataset.firstValue = numbersDisplay;
       display.textContent = '0';    
     }
-    return { firstValue, operator }
   }
-
 }
