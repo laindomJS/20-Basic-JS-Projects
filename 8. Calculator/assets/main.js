@@ -1,4 +1,4 @@
-import { displayNums, cleanScreen, addDecimal, setStates, $, calculate } from './calc.js';
+import { $, displayNums, cleanScreen, addDecimal, setStates, executeCalculate } from './calc.js';
 
 const calculator = $('.calculator');
 const keys = calculator.querySelector('.buttons__grid');
@@ -14,16 +14,5 @@ keys.addEventListener('click', (evt) => {
 	cleanScreen(keyAction, display);
 	addDecimal(keyAction, display, numbersDisplay);
   setStates(calculator, keyAction, numbersDisplay, display);
-
-
-  if (keyAction === 'calculate') {
-    const firstValue = calculator.dataset.firstValue;
-    const operator = calculator.dataset.operator;
-    const secondValue = numbersDisplay;
-
-    display.textContent = calculate(firstValue, operator, secondValue);
-
-  }
-  
-
+  executeCalculate(keyAction, calculator, display, numbersDisplay);
 })

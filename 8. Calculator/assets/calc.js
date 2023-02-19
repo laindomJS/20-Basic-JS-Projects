@@ -41,11 +41,24 @@ export const setStates = (calculator, action, numbersDisplay, display) => {
 
 export const calculate = (n1, operator, n2) => {
   let result = '';
+  const firstNum = parseFloat(n1);
+  const secondNum = parseFloat(n2);
 
-  if (operator === 'add') result = parseFloat(n1) + parseFloat(n2);
-  if (operator === 'subtract') result = parseFloat(n1) - parseFloat(n2);
-  if (operator === 'multiply') result = parseFloat(n1) * parseFloat(n2);
-  if (operator === 'divide') result = parseFloat(n1) / parseFloat(n2);
+  if (operator === 'add') result = firstNum + secondNum;
+  if (operator === 'subtract') result = firstNum - secondNum;
+  if (operator === 'multiply') result = firstNum * secondNum;
+  if (operator === 'divide') result = firstNum / secondNum;
 
   return result;
+}
+
+
+export const executeCalculate = (action, calculator, display, numbersDisplay) => {
+  const firstValue = calculator.dataset.firstValue;
+  const operator = calculator.dataset.operator;
+  const secondValue = numbersDisplay;
+  
+  if (action === 'calculate') { 
+    display.textContent = calculate(firstValue, operator, secondValue);
+  }
 }
