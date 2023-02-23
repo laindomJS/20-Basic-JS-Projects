@@ -11,7 +11,7 @@ keys.addEventListener('click', (evt) => {
 	const numbersDisplay = display.textContent;
 
 	displayNums(keyAction, numbersDisplay, display, keyContent);
-	cleanScreen(keyAction, display);
+	cleanScreen(keyAction, display, calculator);
 	addDecimal(keyAction, display, numbersDisplay);
   setStates(calculator, keyAction, numbersDisplay, display);
   executeCalculate(keyAction, calculator, display, numbersDisplay);
